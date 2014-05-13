@@ -1,0 +1,4 @@
+Date        Version   Description
+-------------------------------------------------------------------------------
+2009.01.07  1.4.01    Initial version of the Arduino implementation of
+                      Protothreads. Based on original Protothreads version 1.4

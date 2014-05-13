@@ -1,0 +1,36 @@
+#######################################
+# Syntax Coloring Map For Ultrasound
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+PT_WAITING	KEYWORD1
+PT_EXITED	KEYWORD1
+PT_ENDED	KEYWORD1
+PT_YIELDED	KEYWORD1
+PT_TIMER	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+PT_INIT	KEYWORD2
+PT_THREAD	KEYWORD2
+PT_BEGIN	KEYWORD2
+PT_END	KEYWORD2
+PT_WAIT_UNTIL	KEYWORD2
+PT_WAIT_WHILE	KEYWORD2
+PT_WAIT_THREAD	KEYWORD2
+PT_SPAWN	KEYWORD2
+PT_EXIT	KEYWORD2
+PT_RESTART	KEYWORD2
+PT_SCHEDULE	KEYWORD2
+PT_YIELD	KEYWORD2
+PT_YIELD_UNTIL	KEYWORD2
+PT_TIMER_DELAY	KEYWORD2
+PT_TIMER_MICRODELAY	KEYWORD2
+PT_TIMER_INIT	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
