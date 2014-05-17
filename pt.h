@@ -48,6 +48,8 @@
 #define __PT_H__
 
 #include "lc.inc"
+#include "pt-timer.h"
+#include "pt-sem.h"
 
 struct pt {
   lc_t lc;

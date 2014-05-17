@@ -1,4 +1,4 @@
-Arduino implementation of Protothreads version 1.4.01
+Arduino implementation of Protothreads version 1.4.02
 -----------------------------------------------------
 
 Protothreads are extremely lightweight stackless threads designed for severely
@@ -46,6 +46,9 @@ to the Arduino platform and is maintained by Benjamin Soelberg.
 The Arduino "implementation" of Protothreads is based on version 1.4 of
 the original Protothreads.
 
+Now, it is developed by Troy Cheung(TroyC.public@gmail.com).
+
 email benjamin.soelberg@gmail.com
 blog  http://www.kukkuk.dk
 www   http://www.javadesign.dk
+
