@@ -47,13 +47,23 @@
 #ifndef __PT_H__
 #define __PT_H__
 
-#include "lc.inc"
+#include "lc.h"
+
+#ifdef PT_USE_TIMER
 #include "pt-timer.h"
+#endif
+
+#ifdef PT_USE_SEM
 #include "pt-sem.h"
+#endif
 
 struct pt {
   lc_t lc;
+#ifdef PT_USE_TIMER
+	pt_timer t;
+#endif
 };
+
 
 #define PT_WAITING 0
 #define PT_EXITED  1
