@@ -77,5 +77,4 @@ typedef unsigned long pt_timer;
 		PT_WAIT_UNTIL((pt),(condition)||((pt_timer)(millis()-(pt)->t)>=(t)));\
 	}while(0)
 
-#endif
-
+#endif /* __PT_TIMER__*/
