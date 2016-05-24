@@ -71,10 +71,30 @@ typedef unsigned long pt_timer;
 /**
  * Wait for condition's becoming true or timeout
  */
-#define PT_TIMER_WAIT_TIMEOUT(pt,condition,t)		\
+#define PT_TIMER_WAIT_TIMEOUT(pt,condition,time)		\
 	do {												\
 		(pt)->t = millis();								\
-		PT_WAIT_UNTIL((pt),(condition)||((pt_timer)(millis()-(pt)->t)>=(t)));\
+		PT_WAIT_UNTIL((pt),(condition)||((pt_timer)(millis()-(pt)->t)>=(time)));\
 	}while(0)
+
+	/**
+	 * \name Delay for specific milliseconds while condition
+	 * @{
+	 */
+
+	/**
+	 * Delay for specific milliseconds while condition
+	 */
+	#define PT_TIMER_WHILE_DELAY(pt,condition,time)		\
+		do {												\
+			(pt)->t = millis();				\
+			LC_SET((pt)->lc);					\
+			if(!(condition)) {				\
+				PT_RESTART(pt);					\
+			}													\
+			if((pt_timer)(millis()-(pt)->t)<(time)) {   \
+				return PT_WAITING;			\
+			}							\
+		}while(0)
 
 #endif /* __PT_TIMER__*/
