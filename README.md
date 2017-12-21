@@ -46,7 +46,7 @@ to the Arduino platform and is maintained by Benjamin Soelberg.
 The Arduino "implementation" of Protothreads is based on version 1.4 of
 the original Protothreads.
 
-Now, it is developed by Troy Cheung(TroyC.public@gmail.com).
+Now, it is developed by P4SSER8Y(P4SSER8Y#outlook.com).
 
 email benjamin.soelberg@gmail.com
 blog  http://www.kukkuk.dk
